@@ -1,0 +1,56 @@
+@font-face {
+    font-family: Avenir;
+    font-weight: 400;
+    src: url(#{$path-typography}/avenir/avenir.woff2) format("woff2"), url(#{$path-typography}/avenir/avenir.woff) format("woff")
+}
+
+@font-face {
+    font-family: Avenir;
+    font-weight: 900;
+    src: url(#{$path-typography}/avenir/avenir900.woff2) format("woff2"), url(#{$path-typography}/avenir/avenir900.woff) format("woff")
+}
+
+@font-face {
+    font-family: 'rajdhanibold';
+    src: url('#{$path-typography}/rajdhani/rajdhani-bold-webfont.woff2') format('woff2'),
+         url('#{$path-typography}/rajdhani/rajdhani-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'rajdhanilight';
+    src: url('#{$path-typography}/rajdhani/rajdhani-light-webfont.woff2') format('woff2'),
+         url('#{$path-typography}/rajdhani/rajdhani-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'rajdhanimedium';
+    src: url('#{$path-typography}/rajdhani/rajdhani-medium-webfont.woff2') format('woff2'),
+         url('#{$path-typography}/rajdhani/rajdhani-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'rajdhaniregular';
+    src: url('#{$path-typography}/rajdhani/rajdhani-regular-webfont.woff2') format('woff2'),
+         url('#{$path-typography}/rajdhani/rajdhani-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'rajdhanisemibold';
+    src: url('#{$path-typography}/rajdhani/rajdhani-semibold-webfont.woff2') format('woff2'),
+         url('#{$path-typography}/rajdhani/rajdhani-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

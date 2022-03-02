@@ -1,0 +1,71 @@
+.card {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin-bottom: calculateRem(20px);
+    padding: calculateRem(10px) calculateRem(20px) calculateRem(10px) calculateRem(10px);
+    border-bottom: 1px solid $c-color1;
+    box-sizing: border-box;
+    cursor: pointer;
+    @include font-icon($icon-arrow-right, after, $fsize: 18px);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: $border-radius;
+    &::after {
+        position: absolute;
+        right: calculateRem(5px);
+    }
+    &.card-active {
+        .card-image {
+            @include font-icon($icon-star, before, $fsize: 18px);
+            img {
+                border: 3px solid $c-color1;
+            }
+            &::before {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: calculateRem(20px);
+                height: calculateRem(20px);
+                padding: calculateRem(4px);
+                border: 2px solid $c-color1;
+                border-radius: 50%;
+                background: #fff;
+                z-index: 1;
+            }           
+        }
+    }
+    &.card-style1 {
+        &::after { display: none;}
+        .card-image { padding-left: calculateRem(20px); }
+    }
+}
+.card-image {
+    position: relative;
+    margin-right: calculateRem(15px);
+    img {
+        border-radius: 50%;
+        object-fit: cover;
+        width: calculateRem(80px);
+        height: calculateRem(80px);
+    }
+    .card-image_small {
+        width: calculateRem(40px);
+        height: calculateRem(40px);
+    }
+}
+.card-content {
+    flex-grow: 1;
+}
+.card-title {
+    width: 100%;
+    font-weight: 600;
+}
+.card-description {
+    p {
+        margin: 0;
+    }
+}

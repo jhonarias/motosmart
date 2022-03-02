@@ -1,0 +1,27 @@
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: calculateRem(20px);
+}
+.tab_item {
+    flex: 1 0 calc(100% / 3);
+    opacity: .5;
+    &:last-child {
+        .tab_item-action { border-right: 0; }
+    }
+    &.is-active {
+        opacity: 1;
+    }
+}
+.tab_item-action {
+    padding: calculateRem(15px);
+    box-sizing: border-box;
+    border-right: 1px solid $c-color1;
+    border-bottom: 1px solid $c-color1;
+    width: 100%;
+}
+.tab_icon {
+    display: block;
+    @include font-size(22px);
+    margin-bottom: calculateRem(8px);
+}

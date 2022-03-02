@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Description app movil">
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/assets/imgs/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/imgs/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/assets/imgs/favicon/favicon-16x16.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./dist/styles.css">
+    <!-- library juqery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- Resources external  -->
+    <!-- materialize -->
+    <script src="./src/assets/js/materialize.js"></script>
+    <script src="./src/assets/js/carousel.js"></script>
+    <script src="./src/assets/js/modal.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.carousel.carousel-slider').carousel({
+                fullWidth: true,
+                indicators: true
+            });
+        });
+    </script>
+    <title>App movil</title>
+</head>
+
+<body class="home-page">
+    <div class="page-wrap">
+        <main class="maincontent">
+            <div class="content-wrap">
+                <div class="container-wrap">
+                    <div class="grid grid-noBottom">
+                        <div class="grid-col col-12 col-lg-12">
+                            <div class="component-full-screen">
+                                <div class="auth-home_container component-align-items-center">
+                                    <div class="form_container">
+                                        <div class="form-image">
+                                            <img src="https://elbullifoundation.com/wp-content/themes/elbullifoundation/images/sapiens-logo.svg"
+                                                alt="">
+                                        </div>
+                                        <h2 class="form-title text-color-white">
+                                            <strong>CREA TU CUENTA</strong>
+                                        </h2>
+                                        <div class="form-bottom">
+                                            <p class="text-center text-color-white">Regístrate usando tu correo electrónico</p>
+                                            <div class="grid grid-center">
+                                                <div class="grid-col col-12">
+                                                    <button class="button btn-light is-full-width">Regístrate con tu Email</button>
+                                                </div>
+                                            </div>
+                                            <p class="text-center text-color-white">O con tus redes sociales</p>
+                                            <div class="grid grid-center">
+                                                <div class="grid-col col-12">
+                                                    <button class="button btn-light is-full-width has-icon has-icon-left"><i class="fab fa-facebook-f"></i>Facebook</button>
+                                                </div>
+                                                <div class="grid-col col-12">
+                                                    <button class="button btn-light is-full-width has-icon has-icon-left"><i class="fab fa-google"></i>Google</button>
+                                                </div>
+                                            </div>
+                                            <p class="text-center text-color-white">¿Ya estás registrado? ¡Ingresa aquí!</p>
+                                            <p class="text-center text-color-white">Al registrarte aceptas nuestros términos <strong>y
+                                                condiciones y política de privacidad</strong></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="ui-overlay"></div>
+</body>
+
+</html>

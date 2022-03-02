@@ -1,0 +1,51 @@
+// date
+.date_items {
+    margin-bottom: calculateRem(20px);
+}
+.date-item {
+    display: flex;
+    justify-content: space-between;
+    padding: calculateRem(15px) 0;
+    border-bottom: 1px solid $c-color1;
+    align-items: center;
+    .date-label {
+        padding-right: calculateRem(15px);
+        margin-bottom: 0;
+    }
+    &:last-child {
+        border-bottom: 0;
+    }
+}
+.date-label {
+    @include font-size($f-size-sm);
+    margin-bottom: calculateRem(12px);
+    font-weight: 600;
+}
+.date-value {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px dashed;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+.date-value_icon {
+    margin-right: calculateRem(10px);
+}
+.date-value_label {
+    font-weight: 600;
+}
+.date-value_icon {
+    @include font-size($f-size-md-xl);
+}
+.date-value_action {
+    padding: calculateRem(5px) calculateRem(10px);
+}
+.date-progressbar {
+    min-width: calculateRem(160px);
+}
+.date-progressbar_label {
+    display: block;
+    margin-bottom: calculateRem(6px);
+    @include font-size($f-size-xs);
+    text-align: right;
+}

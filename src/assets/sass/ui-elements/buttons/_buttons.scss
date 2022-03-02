@@ -1,0 +1,71 @@
+// ****************************************
+//  UI-ELEMENTS
+//
+// ****************************************
+//  BUTTONS
+// ****************************************
+//
+// ****************************************
+
+@import 'buttons-mixins';
+
+//## reset button tag
+button {
+	padding: 0;
+	font-family: $button-fontfamily;
+	font-size: inherit;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.button {
+	@include button;
+}
+
+.btn-loading {
+	$button-loader-size: 12px;
+	position: relative;
+	opacity: .67;
+	&::after {
+		content:'';
+		position: relative;
+		float: right;
+		width: $button-loader-size;
+		height: $button-loader-size;
+		margin-left: calculateRem(14px);
+		margin-right: calculateRem(-4px);
+		border: 2px solid;
+		border-left-color: transparent;
+		border-radius: 50%;
+		opacity: 1;
+		transition: opacity .5s;
+		animation: buttonRotate 1s linear infinite;
+	}
+}
+
+//## button loading animation
+@keyframes buttonRotate {
+	0%    { transform: rotate(0deg); }
+	100%  { transform: rotate(360deg); }
+}
+
+.btn-primary {
+	@include btn-primary;
+}
+
+.btn-secondary {
+	@include btn-secondary;
+}
+
+.btn-action {
+	@include btn-action;
+}
+
+.btn-light {
+	@include btn-light;
+}
+
+.btn-inverse {
+	@include btn-inverse;
+}

@@ -1,0 +1,26 @@
+.form_container {
+    width: 100%;
+}
+.form-image {
+    width: 100%;
+    margin-bottom: calculateRem(20px);
+    text-align: center;
+    img {
+        object-fit: cover;
+        max-width: 200px;
+    }
+}
+.form-icon {
+    margin-bottom: calculateRem(25px);
+    @include font-size($f-size-xlgx);
+    text-align: center;
+    color: $c-primary;
+}
+.form-title {
+    font-weight: 600;
+    margin-bottom: calculateRem(40px);
+    text-align: center;
+}
+.form-bottom {
+    margin-top: calculateRem(70px);
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Description app movil">
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/assets/imgs/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/imgs/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/assets/imgs/favicon/favicon-16x16.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./dist/styles.css">
+    <!-- library juqery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- Resources external  -->
+    <!-- materialize -->
+    <script src="./src/assets/js/materialize.js"></script>
+    <script src="./src/assets/js/carousel.js"></script>
+    <script src="./src/assets/js/modal.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.carousel.carousel-slider').carousel({
+                fullWidth: true,
+                indicators: true
+            });
+            $('.modal').modal();
+        });
+    </script>
+    <title>App movil</title>
+</head>
+
+<body class="home-page">
+    <div class="page-wrap">
+        <main class="maincontent">
+            <div class="content-wrap">
+                <div class="container-wrap">
+                    <div class="grid grid-noBottom">
+                        <div class="grid-col col-12 col-lg-12">
+                            <div class="form_container">
+                                <div class="form-image">
+                                    <img src="https://images.unsplash.com/photo-1600781048302-ac9a3bc48bb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80" alt="">
+                                </div>
+                                <h2 class="form-title">
+                                    Registrate con tu dirección de correo electrónico
+                                </h2>
+                                <div class="ui-form_grid">
+                                    <div class="ui-form_group">
+                                        <div class="ui-input-container">
+                                            <label class="ui-label" for="email">
+                                                Email
+                                            </label>
+                                            <div class="ui-input_wrap">
+                                                <input class="ui-input" type="text" name="email" id="email" placeholder="Correo electrónico">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ui-form_group">
+                                        <div class="ui-input-container is-valid">
+                                            <label class="ui-label" for="email">
+                                                Email
+                                            </label>
+                                            <div class="ui-input_wrap">
+                                                <input class="ui-input" type="text" name="email" id="email" value="jhon.perez@gmail.com" placeholder="Correo electrónico">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ui-form_group">
+                                        <div class="ui-input-container is-invalid">
+                                            <label class="ui-label" for="email">
+                                                Email
+                                            </label>
+                                            <div class="ui-input_wrap">
+                                                <input class="ui-input" type="text" name="email" id="email" value="jhon.perez@gmail.com" placeholder="Correo electrónico">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ui-form_group">
+                                        <div class="ui-input-container is-icon-clickable">
+                                            <label class="ui-label" for="Password">
+                                                Password
+                                            </label>
+                                            <div class="ui-input_wrap">
+                                                <button class="ui-input_action">
+                                                    <i class="ui-input_action-icon far fa-eye"></i>
+                                                    <span class="ui-input_action-label">Show password</span>
+                                                </button>
+                                                <input class="ui-input" type="password" name="Password" id="Password" value="jhon.perez@gmail.com" placeholder="Correo electrónico">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ui-form_group">
+                                        <div class="ui-input-container is-icon-clickable">
+                                            <label class="ui-label" for="Password">
+                                                Password
+                                            </label>
+                                            <div class="ui-input_wrap">
+                                                <button class="ui-input_action">
+                                                    <i class="ui-input_action-icon far fa-eye-slash"></i>
+                                                    <span class="ui-input_action-label">Show password</span>
+                                                </button>
+                                                <input class="ui-input" type="text" name="Password" id="Password" value="jhon.perez@gmail.com" placeholder="Correo electrónico">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ui-form_group">
+                                        <div class="ui-input-container is-icon-clickable is-invalid">
+                                            <label class="ui-label" for="Password">
+                                                Password
+                                            </label>
+                                            <div class="ui-input_wrap">
+                                                <button class="ui-input_action">
+                                                    <i class="ui-input_action-icon far fa-eye"></i>
+                                                    <span class="ui-input_action-label">Show password</span>
+                                                </button>
+                                                <input class="ui-input" type="text" name="Password" id="Password" value="jhon.perez@gmail.com" placeholder="Correo electrónico">
+                                            </div>
+                                            <div class="ui-input_message">
+                                                Password invalid
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ui-form_group">
+                                        <div class="ui-input-container is-readonly">
+                                            <label class="ui-label" for="lastname">
+                                                lastname
+                                            </label>
+                                            <div class="ui-input_wrap">
+                                                <input class="ui-input" type="text" name="lastname" id="lastname" value="Arias" readonly>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ui-form_group ui-form_group-button text-center">
+                                        <button class="button btn-action btn-center">Continuar</button>
+                                    </div>
+                                </div>
+                                <div class="form-bottom">
+                                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet cumque pariatur quis nulla, explicabo doloremque! Possimus provident eos maxime</p>
+                                </div>                                
+                            </div>
+                            <button class="button btn-action is-full-width has-icon has-icon-right btn-is-fixed-down">Siguiente <i class="fas fa-arrow-right"></i></button>                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="ui-overlay"></div>
+</body>
+
+</html>

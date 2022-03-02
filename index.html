@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Description app movil">
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/assets/imgs/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/imgs/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/assets/imgs/favicon/favicon-16x16.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./dist/styles.css">
+    <!-- library juqery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- Resources external  -->
+    <!-- materialize -->
+    <script src="./src/assets/js/materialize.js"></script>
+    <script src="./src/assets/js/carousel.js"></script>
+    <script src="./src/assets/js/modal.js"></script>
+    <script src="./src/assets/js/datepicker.js"></script>
+    <script src="./src/assets/js/dropdown.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.carousel.carousel-slider').carousel({
+                fullWidth: true,
+                indicators: true
+            });
+            $('.modal').modal();
+            $('.datepicker').datepicker();
+        });
+    </script>
+    <title>App movil</title>
+</head>
+
+<body class="home-page">
+    <div class="page-wrap">
+        <main class="maincontent">
+            <div class="content-wrap">
+                <div class="container-wrap">
+                    <div class="grid">
+                        <div class="grid-col col-12 col-lg-12">
+                            <button class="button btn-primary">Primary</button>
+                            <button class="button btn-primary btn-loading">Primary</button>
+                            <button class="button btn-primary is-full-width">Primary</button>
+                            <button class="button btn-primary" disabled="disabled">Primary</button>
+                            <button class="button btn-secondary">Secondary</button>
+                            <button class="button btn-secondary is-full-width">Secondary</button>
+                            <button class="button btn-secondary" disabled="disabled">Secondary</button>
+                            <button class="button btn-light">Light</button>
+                            <button class="button btn-light is-full-width">Light</button>
+                            <button class="button btn-light" disabled="disabled">Light</button>
+                            <button class="button btn-action">Action</button>
+                            <button class="button btn-action is-full-width">Action</button>
+                            <button class="button btn-action has-icon">Action <i class="fas fa-arrow-right"></i></button>
+                            <button class="button btn-action is-full-width has-icon">Action <i class="fas fa-arrow-right"></i></button>
+                            <button class="button btn-action is-full-width has-icon has-icon-right">Action <i class="fas fa-arrow-right"></i></button>
+                            <button class="button btn-action is-full-width has-icon"><i class="fas fa-arrow-right"></i>Action</button>
+                            <button class="button btn-action" disabled="disabled">Action</button>
+                            <button class="button btn-action is-full-width has-icon has-icon-right btn-is-fixed-down">Action <i class="fas fa-arrow-right"></i></button>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptatem laudantium itaque doloribus, harum consequatur dolorem? Quaerat hic neque aperiam sunt labore accusantium quos distinctio, deserunt necessitatibus laborum corporis doloribus?</p>
+                            <p class="text-center">Lorem ipsum dolor sit amet consectetur</p>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="grid-col col-12 col-lg-12">
+                            <div class="carousel carousel-slider">
+                                <a class="carousel-item" href="#one!">
+                                    <img src="https://lorempixel.com/800/400/food/1" class="m-b15">
+                                    <p class="text-center">Queremos que tengas la mejor experiencia,
+                                        por eso es necesario que completes tu
+                                        perfil. Al hacerlo obtendrás tus primeros <strong>5 MotoPuntos</strong></p>
+                                </a>
+                                <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/800/400/food/2" class="m-b15">
+                                    <p class="text-center">This is your 2 panel</p>
+                                </a>
+                                <a class="carousel-item" href="#three!"><img
+                                        src="https://lorempixel.com/800/400/food/3">
+                                    <p class="text-center">This is your 3 panel</p>
+                                </a>
+                                <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/800/400/food/4" class="m-b15">
+                                    <p class="text-center">This is your 4 panel</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="grid-col col-12 col-lg-12">
+                            <!-- start categories component -->
+                            <div class="categories_container">
+                                <div class="categories">
+                                    <div class="categories_item">
+                                        <div class="ui-checkbox">
+                                            <input type="checkbox" id="Llantas" name="Llantas" checked="checked">                                                
+                                            <label for="Llantas">
+                                                    Llantas
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="categories_item">
+                                        <div class="ui-checkbox">
+                                            <input type="checkbox" id="Cascos" name="Cascos">                                                
+                                            <label for="Cascos">
+                                                Cascos
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="categories_item">
+                                        <div class="ui-checkbox">
+                                            <input type="checkbox" id="Talleres" name="Talleres">                                               
+                                            <label for="Talleres">
+                                                Talleres de servicio
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="categories_item">
+                                        <div class="ui-checkbox">
+                                            <input type="checkbox" id="Repuestos" name="Repuestos">                                               
+                                            <label for="Repuestos">
+                                                Repuestos
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="categories_item">
+                                        <div class="ui-checkbox">
+                                            <input type="checkbox" id="Accesorios" name="Accesorios">                                               
+                                            <label for="Accesorios">
+                                                Accesorios
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="categories_item">
+                                        <div class="ui-checkbox">
+                                            <input type="checkbox" id="Mantenimiento" name="Mantenimiento">                                               
+                                            <label for="Mantenimiento">
+                                                Mantenimiento
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end categories component -->
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="grid-col col-12 col-lg-12">
+                            <!-- start cards -->
+                            <div class="cards_container">
+                                <div class="cards">                                
+                                    <div class="card card-active">
+                                        <div class="card-image">
+                                            <img src="https://images.unsplash.com/photo-1542683088-abb3da334598?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1392&q=80" alt="">
+                                        </div>
+                                        <div class="card-content">
+                                            <div class="card-title">
+                                                <span class="card-title_text">Honda CBF 750</span>
+                                            </div>
+                                            <div class="card-description">
+                                                <p>A1234FK</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="https://images.unsplash.com/photo-1542683088-abb3da334598?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1392&q=80" alt="">
+                                        </div>
+                                        <div class="card-content">
+                                            <div class="card-title">
+                                                <span class="card-title_text">Honda CBF 750</span>
+                                            </div>
+                                            <div class="card-description">
+                                                <p>A1234FK</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end cards -->
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="grid-col col-12 col-lg-12">
+                            <!-- dates maintenance -->
+                            <h2 class="form-title m-b15">
+                                Perfil técnico
+                            </h2>
+                            <p class="text-center">
+                                Completa estos datos de tu<br>
+                                <strong>AKT 125 NKDR</strong>
+                            </p>
+                            <div class="ui-form_grid">
+                                <div class="ui-form_group m-b15">
+                                    <div class="ui-input-container has-icon has-icon-right is-readonly">
+                                        <label class="ui-label" for="date">
+                                            Último cambio de aceite
+                                        </label>
+                                        <div class="ui-input_wrap">
+                                            <i class="far fa-calendar-minus ui-input_icon"></i>
+                                            <input class="ui-input" type="text" name="date" id="date" readonly value="Marzo 20, 2020" placeholder="Selecciona una fecha">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ui-form_group m-b15">
+                                    <div class="ui-input-container has-icon has-icon-right is-readonly">
+                                        <label class="ui-label" for="date">
+                                            Último mantenimiento
+                                        </label>
+                                        <div class="ui-input_wrap">
+                                            <i class="far fa-calendar-minus ui-input_icon"></i>
+                                            <input class="ui-input" type="text" name="date" id="date" readonly value="Mayo 14, 2020" placeholder="Selecciona una fecha">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end dates maintenance -->
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="grid-col col-12 col-lg-12">
+                            <!-- Uploads documents -->
+                            <h2 class="form-title m-b15">
+                                SOAT Y TECNO
+                            </h2>
+                            <p class="text-center">
+                                Sube estos documentos de tu vehículo, configura cuando vencen y así te avisamos para que estes al día
+                            </p>
+                            <div class="uploads-documents">
+                                <div class="uploads-documents_items">
+                                    <div class="document">
+                                        <div class="document-head">
+                                            <div class="document-title">
+                                                <span class="document-title_text">
+                                                    Soat
+                                                </span>
+                                            </div>
+                                            <div class="document-status">
+                                                <span class="document-status_text">Pendiente</span>
+                                            </div>
+                                        </div>
+                                        <div class="document-body">
+                                            <div class="document-file">
+                                                <i class="fas fa-upload"></i>
+                                                <span class="document-file_text">Sube tu SOAT</span>
+                                            </div>
+                                            <div class="document-content">
+                                                <div class="ui-input-container has-icon">
+                                                    <label class="ui-label" for="date">
+                                                        Vence el:
+                                                    </label>
+                                                    <div class="ui-input_wrap">
+                                                        <i class="far fa-calendar-minus ui-input_icon"></i>
+                                                        <input class="ui-input datepicker" type="text" name="date" id="date" placeholder="Selecciona una fecha">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="document">
+                                        <div class="document-head">
+                                            <div class="document-title">
+                                                <span class="document-title_text">
+                                                    TECNOMECÁNICA
+                                                </span>
+                                            </div>
+                                            <div class="document-status">
+                                                <span class="document-status_text">Pendiente</span>
+                                            </div>
+                                        </div>
+                                        <div class="document-body">
+                                            <div class="document-file">
+                                                <i class="fas fa-upload"></i>
+                                                <span class="document-file_text">Sube tu TECNO</span>
+                                            </div>
+                                            <div class="document-content">
+                                                <div class="ui-input-container has-icon">
+                                                    <label class="ui-label" for="date">
+                                                        Vence el:
+                                                    </label>
+                                                    <div class="ui-input_wrap">
+                                                        <i class="far fa-calendar-minus ui-input_icon"></i>
+                                                        <input class="ui-input" type="text" name="date" id="date" placeholder="Selecciona una fecha">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="document">
+                                        <div class="document-head">
+                                            <div class="document-title">
+                                                <span class="document-title_text">
+                                                    Soat
+                                                </span>
+                                            </div>
+                                            <div class="document-status">
+                                                <span class="document-status_text"><i class="fas fa-check"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="document-body">
+                                            <div class="document-file">
+                                                <div class="document-file_img">
+                                                    <img src="https://scontent.fymy1-2.fna.fbcdn.net/v/t1.0-9/p720x720/107901490_3035759893186861_2377117248730957709_o.jpg?_nc_cat=101&_nc_sid=2d5d41&_nc_ohc=WvO_LSaRgdUAX8Cq9jF&_nc_ht=scontent.fymy1-2.fna&tp=6&oh=f581ac1b55af594b989862a720501a73&oe=5F7EEDD2" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="document-content">
+                                                <div class="ui-input-container has-icon is-readonly">
+                                                    <label class="ui-label" for="date">
+                                                        Vence el:
+                                                    </label>
+                                                    <div class="ui-input_wrap">
+                                                        <i class="far fa-calendar-minus ui-input_icon"></i>
+                                                        <input class="ui-input" type="text" name="date" id="date" readonly value="Dic. 12, 2020" placeholder="Selecciona una fecha">
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="date-label">
+                                                    <span class="date-label_text">
+                                                        Vence el:
+                                                    </span>
+                                                </div>
+                                                <div class="date-value">
+                                                    <span class="date-value_icon">
+                                                        <i class="far fa-calendar-minus"></i>
+                                                    </span>
+                                                    <span class="date-value_label">
+                                                        2021-01-01
+                                                    </span>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-col col-12 text-center">
+                                <button class="button btn-primary m-t15">Continuar</button>
+                            </div>
+                            <div class="grid-col col-12 text-center">
+                                <button class="button btn-inverse">Cancelar</button>
+                            </div>
+                            <!-- end uploads documents -->
+                        </div>
+                    </div>
+                    <!-- <div class="grid">
+                        <div class="grid-col col-12 col-lg-12">
+                            <h2 class="form-title ui-headline--h4 m-b15 text-left">
+                                Zona peligrosa
+                            </h2>
+                            <div class="date_items">
+                                <div class="date-item">
+                                    <div class="date-value">
+                                        <span class="date-value_label">
+                                            Eliminar vehículo
+                                        </span>
+                                        <button class="date-value_action">
+                                            <span class="date-value_icon">
+                                                <i class="far fa-trash-alt"></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="grid">
+                        <div class="grid-col col-12 col-lg-12">
+                            <!-- Modal Trigger -->
+                            <a class="button btn-inverse modal-trigger" href="#modal1">Modal</a>
+                            <!-- Modal Structure -->
+                            <div id="modal1" class="modal bottom-sheet">
+                                <div class="modal-content">
+                                    <div class="form-icon">
+                                        <i class="far fa-comment-dots"></i>
+                                    </div>
+                                    <h3 class="form-title ui-headline--h3">
+                                        Revisa tu WhatsApp
+                                    </h3>
+                                    <p class="text-center">Para validar tu número de teléfono, ingresa el
+                                        código de 4 dígitos que enviamos al <strong>310 489 9876</strong></p>
+                                    <div class="ui-form_verification_container is-invalid">
+                                        <div class="ui-form_verification">
+                                            <div class="ui-form_group">
+                                                <div class="ui-input-container has-value">
+                                                    <label class="ui-label" for="digit1">
+                                                        digit 1
+                                                    </label>
+                                                    <div class="ui-input_wrap">
+                                                        <input class="ui-input" value="0" type="text" name="digit1" id="digit1">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ui-form_group">
+                                                <div class="ui-input-container is-focused">
+                                                    <label class="ui-label" for="digit2">
+                                                        digit 2
+                                                    </label>
+                                                    <div class="ui-input_wrap">
+                                                        <input class="ui-input" type="text" name="digit2" id="digit2">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ui-form_group">
+                                                <div class="ui-input-container is-invalid">
+                                                    <label class="ui-label" for="digit3">
+                                                        digit 3
+                                                    </label>
+                                                    <div class="ui-input_wrap">
+                                                        <input class="ui-input" type="text" value="5" name="digit3" id="digit3">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ui-form_group">
+                                                <div class="ui-input-container">
+                                                    <label class="ui-label" for="digit4">
+                                                        digit 4
+                                                    </label>
+                                                    <div class="ui-input_wrap">
+                                                        <input class="ui-input" type="text" name="digit4" id="digit4">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ui-input_message">
+                                            Ingresaste un código errado, inténtalo de nuevo
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <p class="text-center">¿No recibiste el código? <a href="#">Usa otra opción</a></p>
+                                    <button class="button btn-action is-full-width">Verificar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="grid-col col-12 col-lg-12">
+                            <div class="edit-file">
+                                <div class="edit-file_image">
+                                    <i class="fas fa-image"></i>
+                                    <!-- After of upload image this is image to put -->
+                                    <!-- <img src="https://images.unsplash.com/photo-1542683088-abb3da334598?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1392&q=80" alt="" class="image"> -->
+                                </div>
+                                <button class="edit-file_action">
+                                    <span class="edit-file_action_text">edit</span>
+                                    <i class="fas fa-pen"></i>
+                                </button>
+                            </div>
+                            <div class="ui-form_grid">
+                                <div class="ui-form_group">
+                                    <div class="ui-input-container">
+                                        <label class="ui-label" for="name">
+                                            Nombre
+                                        </label>
+                                        <div class="ui-input_wrap">
+                                            <input class="ui-input" type="text" name="name" id="name" value="Johan Gonzales">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ui-form_group">
+                                    <div class="ui-input-container">
+                                        <label class="ui-label" for="email">
+                                            Email
+                                        </label>
+                                        <div class="ui-input_wrap">
+                                            <input class="ui-input" type="text" name="email" id="email" value="johan.gonzales@gmail.com">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-col col-12 text-center">
+                                    <button class="button btn-primary m-t15">Guardar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="grid">
+                        <div class="grid-col col-12 col-lg-12">
+                            <!-- start tabs -->
+                            <img class="image" src="https://images.unsplash.com/photo-1542683088-abb3da334598?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1392&q=80" alt="">
+                            <ul class="tabs">
+                                <li class="tab_item is-active">
+                                    <button aria-expanded="true" aria-controls="documentsID" class="tab_item-action">
+                                        <div class="tab_icon">
+                                            <i class="fas fa-folder"></i>
+                                        </div>
+                                        <span class="tab_label">
+                                            Documentos
+                                        </span>
+                                    </button>
+                                </li>
+                                <li class="tab_item">
+                                    <button aria-expanded="false" aria-controls="AlarmasID" class="tab_item-action">
+                                        <div class="tab_icon">
+                                            <i class="fas fa-exclamation-triangle"></i>
+                                        </div>
+                                        <span class="tab_label">
+                                            Alarmas
+                                        </span>
+                                    </button>
+                                </li>
+                                <li class="tab_item">
+                                    <button aria-expanded="false" aria-controls="GPSID" class="tab_item-action">
+                                        <div class="tab_icon">
+                                            <i class="fas fa-location-arrow"></i>
+                                        </div>
+                                        <span class="tab_label">
+                                            GPS
+                                        </span>
+                                    </button>
+                                </li>
+                            </ul>                            
+                            <!-- end tabs -->
+                        </div>
+                    </div>
+                </div>
+                <div class="container-wrap">
+                    <div class="grid">
+                        <div class="grid-col col-12 col-lg-12">
+                            <h2 class="form-title m-b15">
+                                ESTADO DE TU MOTO
+                            </h2>
+                            <div class="date_items">
+                                <div class="date-item">
+                                    <div class="date-label">
+                                        <span class="date-label_text">
+                                            Aceite
+                                        </span>   
+                                    </div>
+                                    <div class="date-progressbar">
+                                        <div class="date-progressbar_label">
+                                            <span class="date-progressbar_label_text">
+                                                Cambio en 4 meses
+                                            </span>
+                                        </div>
+                                        <div class="date-progressbar_value">
+                                            <div class="progressbar">
+                                                <span class="progressbar-advance" style="width: 20%;"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="date-item">
+                                    <div class="date-label">
+                                        <span class="date-label_text">
+                                            Kit de arrastre
+                                        </span>   
+                                    </div>
+                                    <div class="date-progressbar">
+                                        <div class="date-progressbar_label">
+                                            <span class="date-progressbar_label_text">
+                                                Cambio en 10 meses
+                                            </span>
+                                        </div>
+                                        <div class="date-progressbar_value">
+                                            <div class="progressbar">
+                                                <span class="progressbar-advance" style="width: 30%;"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-wrap">
+                    <div class="grid">
+                        <div class="grid-col">
+                            <div class="cards">
+                                <div class="card card-style1">
+                                    <div class="card-image">
+                                        <img class="card-image_small" src="https://www.sured.com.co/wp-content/uploads/2019/02/creditos_1.png" alt="">
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="card-description">
+                                            <p>¡Completa este registro y obtén<br> <strong>5 MotoPuntos</strong>!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- <div class="ui-overlay"></div> -->
+</body>
+
+</html>

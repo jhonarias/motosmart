@@ -1,0 +1,48 @@
+// + Overlay
+// -------
+.ui-overlay {
+	@include overlay-style();
+}
+
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right !important;
+}
+.text-left {
+	text-align: left !important;
+}
+.m-t5 {
+	margin-top: 5px !important;
+}
+.m-t10 {
+	margin-top: 10px !important;
+}
+.m-t15 {
+	margin-top: 15px !important;
+}
+.m-b5 {
+	margin-bottom: 5px !important;
+}
+.m-b10 {
+	margin-bottom: 10px !important;
+}
+.m-b15 {
+	margin-bottom: 15px !important;
+}
+.text-color-white {
+	color: #fff !important;
+}
+.image {
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+	object-fit: cover;
+}
+.text-font-default {
+	font-family: $font-name;
+}
+.text-size-md {
+	font-size: calculateRem($f-size-md-xxl) !important;
+}

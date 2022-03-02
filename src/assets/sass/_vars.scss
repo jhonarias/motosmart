@@ -1,0 +1,111 @@
+$container-max-width: 1440px !default;
+$default-pad: 24px !default;
+
+// + Grid gutter variations
+// -------
+$gutter: 14px !default;
+$gutter-desktop: 50px !default;
+
+$gutter-sides: $gutter !default;
+$gutter-sides-desktop: $gutter-desktop !default;
+
+// + Breakpoints
+// -------
+//## mobile
+$bp-mobile-small: 480px !default;
+$bp-mobile-small-max: 479px !default;
+$bp-mobile: 640px !default;
+$bp-mobile-max: 639px !default;
+$bp-mobile-min: 481px !default;
+//## tablet
+$bp-tablet-portrait: 768px !default;
+$bp-tablet-portrait-max: 767px !default;
+$bp-tablet-portrait-min: 641px !default;
+$bp-tablet-landscape: 992px !default;
+$bp-tablet-landscape-max: 991px !default;
+$bp-tablet-landscape-min: 769px !default;
+//## desktop
+$bp-desktop: 1200px !default;
+$bp-desktop-max: 1199px !default;
+$bp-desktop-min: 993px !default;
+
+
+// + Media queries
+// -------
+$mobile-sm: '(min-width: #{$bp-mobile-small})';                         // >=480px
+$mobile: '(min-width: #{$bp-mobile})';                                  // >=640px
+$tablet-portrait: '(min-width: #{$bp-tablet-portrait})';                // >=768px
+$tablet-landscape: '(min-width: #{$bp-tablet-landscape})';              // >=992px
+$desktop: '(min-width: #{$bp-desktop})';                                // >=1200px
+
+$until-mobile-sm: '(max-width: #{$bp-mobile-small-max})';               // < 480px
+$until-mobile: '(max-width: #{$bp-mobile-max})';                        // < 640px
+$until-tablet-portrait: '(max-width: #{$bp-tablet-portrait-max})';      // < 768px
+$until-tablet-landscape: '(max-width: #{$bp-tablet-landscape-max})';    // < 992px
+
+// content wrap
+$content-wrap-padding-bottom: 53px;
+
+// paths
+$path-icons: '../src/assets/fonts/icons/webfonts';
+$path-typography: '../src/assets/fonts';
+$path-imgs: '../src/assets/imgs';
+
+
+// link
+$link-hover-opacity: .7;
+// overlay
+$overlay-zindex: 999;
+// full screen
+$fullscreen-zindex: 1000;
+// btn is fixed down
+$btn-fixed-zindex: 100;
+// icon arrow up
+$icon-arrow-up: '\f077';
+// icon arrow right
+$icon-arrow-right: '\f054';
+// icon check
+$icon-check: '\f00c';
+// icon star
+$icon-star: '\f005';
+// icon exclamation
+$icon-exclamation: '\f06a';
+
+// borders
+$border-radius: 6px;
+
+@import 'vars/vars-typography';
+@import 'vars/vars-colors';
+
+// 5. Carousel
+// ==========================================================================
+
+$carousel-height: 400px !default;
+$carousel-item-height: $carousel-height / 2 !default;
+$carousel-item-width: $carousel-item-height !default;
+
+// 8. Date + Time Picker
+// ==========================================================================
+
+$datepicker-display-font-size: 2.8rem;
+$datepicker-calendar-header-color: #999;
+$datepicker-weekday-color: rgba(0, 0, 0, .87) !default;
+$datepicker-weekday-bg: darken($c-secondary, 7%) !default;
+$datepicker-date-bg: $c-secondary !default;
+$datepicker-year: rgba(255, 255, 255, .7) !default;
+$datepicker-focus: rgba(0,0,0, .05) !default;
+$datepicker-selected: $c-secondary !default;
+$datepicker-selected-outfocus: desaturate(lighten($c-secondary, 35%), 15%) !default;
+$datepicker-day-focus: transparentize(desaturate($c-secondary, 5%), .75) !default;
+$datepicker-disabled-day-color: rgba(0, 0, 0, .3) !default;
+
+$timepicker-clock-color: rgba(0, 0, 0, .87) !default;
+$timepicker-clock-plate-bg: #eee !default;
+
+// 9. Dropdown
+// ==========================================================================
+
+$dropdown-bg-color: #fff !default;
+$dropdown-hover-bg-color: #eee !default;
+$dropdown-color: $c-secondary !default;
+$dropdown-item-height: 50px !default;

@@ -1,0 +1,51 @@
+$verification-gutter: 10px;
+$verification-border-width: 2px;
+.ui-form_verification_container {
+    &.is-invalid {
+        .ui-input_message {
+            color: $c-error;
+        }
+    }
+}
+.ui-form_verification {
+    display: flex;
+    margin: 0 calculateRem(-$verification-gutter);
+    .ui-input-container {
+        &.has-value {
+            .ui-input {
+                border: $verification-border-width solid $c-primary; 
+            }
+        }
+        &.is-focused {
+            .ui-input {
+                border: $verification-border-width solid darken($c-primary, $btn-darken-percentage); 
+            }
+        }
+        &.is-invalid {
+            .ui-input {
+                border-color: $c-error;
+                border-width: $verification-border-width;
+                color: $c-error;
+            }
+            .ui-input_wrap {
+                &::after {
+                    display: none;
+                }
+            }
+        }       
+    }
+	.ui-form_group {
+		margin-left: calculateRem($verification-gutter);
+		margin-right: calculateRem($verification-gutter);
+	}
+	.ui-label {
+		@include hide-visually;
+	}
+	.ui-input {
+        height: calculateRem(80px);
+        @include font-size($f-size-xlg);
+		border: 1px solid $c-color1;
+        text-align: center;
+        
+	}
+}

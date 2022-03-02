@@ -1,0 +1,57 @@
+// + UI-ELEMENTS
+// -------
+// ++ Buttons
+$button-fontfamily: $f-body;
+$button-fontsize: $f-size-md-xxl;
+$button-boxshadow: inset 0 0 0 1px;
+$button-padding-top-bottom: 18px;
+$button-padding-left-right: 24px;
+$button-border-width: 1px;
+$button-border-radius: 50vh;
+$button-fontweight: 500;
+
+$btn-darken-percentage: 10%;
+$btn-lighten-percentage: 14%;
+
+// +++ button primary
+$btn-primary-color: #fff;
+$btn-primary-bg: $c-primary;
+$btn-primary-border: $btn-primary-bg;
+$btn-primary-border-hover: darken($btn-primary-border, $btn-darken-percentage);
+$btn-primary-bg-hover: darken($btn-primary-bg, $btn-darken-percentage);
+
+// +++ button secondary
+$btn-secondary-color: #fff;
+$btn-secondary-bg: $c-secondary;
+$btn-secondary-border: #fff;
+$btn-secondary-border-hover: darken($btn-secondary-border, $btn-darken-percentage);
+$btn-secondary-bg-hover: darken($btn-secondary-bg, $btn-darken-percentage);
+
+// +++ button action
+$btn-action-color: #fff;
+$btn-action-bg: $c-color1;
+$btn-action-border: $btn-action-bg;
+$btn-action-border-hover: darken($btn-action-border, $btn-darken-percentage);
+$btn-action-bg-hover: darken($btn-action-bg, $btn-darken-percentage);
+
+// +++ button light
+$btn-light-color: $c-primary;
+$btn-light-bg: #fff;
+$btn-light-border: $btn-light-bg;
+$btn-light-border-hover: darken($btn-light-border, $btn-darken-percentage);
+$btn-light-bg-hover: darken($btn-light-bg, $btn-darken-percentage);
+
+
+// +++ button inverse
+$btn-inverse-color: $c-text;
+$btn-inverse-bg: transparent;
+$btn-inverse-border: transparent;
+$btn-inverse-border-hover: darken($btn-inverse-border, $btn-darken-percentage);
+$btn-inverse-bg-hover: darken($btn-inverse-bg, $btn-darken-percentage);
+
+// + STATES
+// +++ disabled
+$button-disabled-color: #bbb;
+$button-disabled-background: #ddd;
+$button-disabled-border: $button-disabled-background;
+$button-disabled-opacity: .34;

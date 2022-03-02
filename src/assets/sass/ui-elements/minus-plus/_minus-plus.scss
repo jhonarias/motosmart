@@ -1,0 +1,45 @@
+$i-num-ud-height: 50px;
+$i-num-ud-height-mobile: 35px;
+.ui-num-ud {
+    display: flex;
+    align-items: center;
+}
+.ui-num-ud_input,
+.ui-num-ud_button {
+    height: calculateRem($i-num-ud-height-mobile);
+}
+.ui-num-ud_button  {
+    @include button;
+    @include btn-primary;
+    padding: calculateRem(10px) calculateRem(12px);
+    i {
+        margin: 0;
+    }
+}
+.ui-num-ud_input {
+    min-width: calculateRem(50px);
+    max-width: calculateRem(80px);
+    border: 1px solid $c-color1;
+    box-sizing: border-box;
+    input {
+        border: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+}
+.ui-num-ud_button_label {
+    @include hide-visually;
+}
+
+@media #{$mobile-sm} { // >= 480px
+    .ui-num-ud_input,
+    .ui-num-ud_button {
+        height: calculateRem($i-num-ud-height);
+    }
+    .ui-num-ud_button {
+        padding: calculateRem(10px) calculateRem(24px);
+    }
+}

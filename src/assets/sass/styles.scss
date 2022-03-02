@@ -1,0 +1,257 @@
+@import 'import';
+
+// ****************************************
+//  POBEDA STYLES
+//
+// ****************************************
+//
+// ****************************************
+
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+body {
+	@include font-size($f-size);
+	font-family: $f-body;
+	color: $c-text;
+	line-height: 1.4;
+	padding: 0;
+	margin: 0;
+	min-width: 320px;
+	letter-spacing: 0.05em;
+	background-color: $body-background;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+a,
+input,
+textarea,
+button,
+select,
+.button,
+[role='button'] {
+	&:focus {
+		//## should be for accessibility
+		// outline: 0;
+		@include accessibility-outline;
+	}
+	&:focus:active {
+		outline: 0;
+	}
+}
+[tabindex='-1']:focus {
+	outline: 0;
+}
+button {
+	color: inherit; // reduce css file size
+}
+// headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font-name-rajdhanibold;
+	margin-top: 0;
+	margin-bottom: calculateRem(20px);
+}
+h1,
+h2 {
+	@include font-size($f-size-lg);
+}
+.ui-headline--h3 {
+	@include font-size($f-size-md);
+}
+.ui-headline--h4 {
+	@include font-size($f-size-sm);
+}
+a {
+	text-decoration: none;
+	color: $c-link;
+	cursor: pointer;
+	&:hover {
+		//color: $c-link-hover;
+		opacity: 0.7;
+	}
+	&:active {
+		text-decoration: inherit;
+	}
+}
+[role='button'] {
+	cursor: pointer;
+}
+::selection {
+	color: #fff;
+	background-color: $c-primary;
+}
+
+strong {
+	font-weight: 600;
+}
+
+p {
+	margin-bottom: calculateRem(30px);
+}
+em {
+	font-style: italic;
+}
+sup,
+sub {
+	font-size: 0.75em;
+	a {
+		color: inherit;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+sup {
+	vertical-align: top;
+	a {
+		vertical-align: top;
+	}
+}
+sub {
+	vertical-align: bottom;
+	a {
+		vertical-align: bottom;
+	}
+}
+fieldset {
+	width: 100%;
+}
+
+input {
+	font-family: $font-name;
+	@include font-size($f-size);
+}
+
+// + Template
+// -------
+.page-wrap {
+	position: relative;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	transition: margin 700ms;
+}
+.content-wrap {
+	position: relative;
+	padding-bottom: $content-wrap-padding-bottom;
+}
+
+/* 24dp elevation */
+.z-depth-5 {
+	box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12),
+		0 11px 15px -7px rgba(0, 0, 0, 0.2);
+}
+
+.z-depth-1 {
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),
+				0 3px 1px -2px rgba(0,0,0,0.12),
+				0 1px 5px 0 rgba(0,0,0,0.2);
+  }
+
+.component-align-items-center {
+	display: flex;
+	align-items: center;
+	flex-flow: row wrap;
+	height: 100%;
+}
+.component-full-screen {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: $c-secondary;
+	height: 100vh;
+	width: 100%;
+	padding: $gutter;
+	overflow-y: auto;
+	box-sizing: border-box;
+}
+
+.auth-home_container {
+	height: 100%;
+	.carousel {
+		height: 100% !important;
+	}
+	.carousel-item {
+		display: flex;
+		align-items: center;
+	}
+	.indicators {
+		bottom: calculateRem(75px);
+	}
+}
+
+// progressbar
+.progressbar,
+.progressbar-advance {
+	border-radius: 100vh;
+}
+.progressbar {
+	width: 100%;
+	height: calculateRem(5px);
+	background: $c-color1;
+	position: relative;
+}
+.progressbar-advance {
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: width 2s;
+	height: 100%;
+	background: $c-text;
+	z-index: 1;
+}
+
+.edit-file {
+	margin: 0 auto 20px;
+	height: 120px;
+	width: 120px;
+	position: relative;
+}
+$edit-file-radius: 50%;
+.edit-file_image,
+.edit-file_action {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: $edit-file-radius;
+}
+.edit-file_image {
+	background: $c-color1;
+	@include font-size($f-size-md);
+	overflow: hidden;
+	&,
+	.image {
+		height: 100%;
+		width: 100%;
+	}
+	.image {
+		position: absolute;
+		border-radius: $edit-file-radius;
+		z-index: 1;
+	}
+}
+.edit-file_action {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	padding: 10px;
+	background: #000;
+	color: #fff;
+	z-index: 2;
+}
+.edit-file_action_text {
+	@include hide-visually;
+}

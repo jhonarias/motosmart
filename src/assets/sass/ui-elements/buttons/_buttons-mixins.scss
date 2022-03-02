@@ -1,0 +1,149 @@
+// ****************************************
+//  UI-ELEMENTS
+//
+// ****************************************
+//  BUTTONS
+// ****************************************
+//
+// ****************************************
+
+@import './buttons-vars';
+
+@mixin button-generator($color, $background, $border, $variation: 'darker', $insetborder: null) {
+	color: $color;
+	background-color: $background;
+	border-color: $border;
+	@if $insetborder == 'insetborder' {
+		box-shadow: inset 0 0 0 1px $border;
+	}
+	&:focus,
+	&.focus {
+		color: $color;
+		background-color: $background;
+		border-color: $border;
+	}
+	&:hover {
+		color: $color;
+		@if $insetborder == 'insetborder' {
+			@if $variation == 'darker' {
+				box-shadow: inset 0 0 0 1px darken($border, $btn-darken-percentage);
+			}
+			@else if $variation == 'lighter' {
+				box-shadow: inset 0 0 0 1px lighten($border, $btn-lighten-percentage);
+			}
+		}
+		@if $variation == 'darker' {
+			background-color: darken($background, $btn-darken-percentage);
+			border-color: darken($border, $btn-darken-percentage);
+		}
+		@else if $variation == 'lighter' {
+			color: $color;
+			background-color: lighten($background, $btn-lighten-percentage);
+			border-color: lighten($border, $btn-lighten-percentage);
+		}
+	}
+}
+
+// + Styles
+// -------
+@mixin button {
+	@include font-size($button-fontsize);
+	position: relative;
+	// display: flex;
+	// align-items: center;
+	// justify-content: center;
+	font-weight: $button-fontweight;
+	line-height: 1;
+	padding: calculateRem($button-padding-top-bottom) calculateRem($button-padding-left-right);
+	border-radius: $button-border-radius;
+	border-width: $button-border-width;
+	border-style: solid;
+	cursor: pointer;
+	transition: all .06s linear;
+	box-sizing: border-box;
+	margin-bottom: calculateRem(12px);
+	&[disabled='disabled'],
+	&.disabled,
+	&[disabled='disabled']:hover {
+		cursor: default;
+		opacity: $button-disabled-opacity;
+		user-select: none;
+	}
+
+	// has icon
+	&.has-icon {
+		i {
+			@include font-size($f-size-sm);
+			margin-left: calculateRem(12px);
+		}
+	}
+	// has icon right
+	&.has-icon-right {
+		i {
+			position: absolute;
+			right: calculateRem($button-padding-left-right/2);
+			top: 50%;
+			transform: translateY(-50%);
+			margin-left: auto;
+		}
+	}
+
+	// has icon left
+	&.has-icon-left {
+		i {
+			margin-right: calculateRem(12px);
+		}
+	}
+
+	// btn is fixed down
+	&.btn-is-fixed-down {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		margin-bottom: 0;		
+		z-index: $btn-fixed-zindex;
+		border-radius: 0;
+		i {
+			position: relative;
+			margin-left: auto;
+			transform: none;
+			right: auto;
+		}
+	}
+
+	// btn center
+	&.btn-center {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	// is full width
+	&.is-full-width {
+		width: 100%;
+	}
+}
+
+@mixin btn-primary {
+	@include button-generator($btn-primary-color, $btn-primary-bg, $btn-primary-border, lighter);
+	font-weight: 600;
+}
+
+@mixin btn-secondary {
+	@include button-generator($btn-secondary-color, $btn-secondary-bg, $btn-secondary-border, lighter);
+	font-weight: 600;
+}
+
+@mixin btn-action {
+	@include button-generator($btn-action-color, $btn-action-bg, $btn-action-border, lighter);
+	font-weight: 600;
+}
+
+@mixin btn-light {
+	@include button-generator($btn-light-color, $btn-light-bg, $btn-light-border, lighter);
+	font-weight: 600;
+}
+
+@mixin btn-inverse {
+	@include button-generator($btn-inverse-color, $btn-inverse-bg, $btn-inverse-border, lighter);
+	font-weight: 600;
+}

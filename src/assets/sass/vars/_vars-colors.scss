@@ -1,0 +1,27 @@
+// + Colors
+// -------
+//## principal colours
+$c-primary:         #FF7400;
+$c-secondary:       #da6128;
+$c-color1:          #bebcba;
+$c-color2:          #686E7F;
+
+$c-success: #52BA52;
+$c-error: #e63432;
+
+
+
+$c-text: $c-color2;
+$body-background: #fff;
+
+// border
+$c-border: #f7f0ea;
+
+// + UI-ELEMENTS
+// -------
+$accessibility-outline-color: transparent;
+$c-link: $c-primary;
+$c-link-hover: $c-link;
+
+// overlay
+$overlay-background: rgba($c-text, .5);
